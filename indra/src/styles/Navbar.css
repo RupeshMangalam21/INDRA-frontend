@@ -1,18 +1,24 @@
 /* Navbar Styles */
 nav {
-    background-color: #3333335c; /* Background color for the navbar */
-    color: #fff; /* Text color for the links */
-    padding: 10px; /* Add some padding to the navbar */
+  background-color: #3333335c;
+  color: #fff;
+  padding: 25px;
+  display: flex;
   }
+
+navbar-brand {
+  font-size: 35px;
+  margin-right: 104vh;
+}
   
   ul {
     list-style-type: none; /* Remove bullet points from the list */
     padding: 0; /* Remove default padding from the list */
   }
-  
-  li {
-    display: inline; /* Display list items horizontally */
-    margin-right: 20px; /* Add spacing between list items */
+
+    li {
+      display: inline;
+      margin-right: 112px;
   }
   
   a {
