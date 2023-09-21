@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-// import '../styles/Home.css'; // Import your CSS file for styling
+import '../styles/Home.css'; 
 
 const Home = () => {
   const textItems = [
@@ -24,7 +24,17 @@ const Home = () => {
   }, [goToNext]); // Add goToNext to the dependency array
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" style={{
+      background: 'rgba(240, 248, 255, 0.5)',
+      borderRadius: '26px',
+      maxWidth: 'fit-content',
+      padding: '15px',
+      marginTop: '15vh',
+      marginLeft: '6vh'
+    }}>
+      <h2>
+        CloudBurst Prediction Model Using Ensemble Models for best Accuracy!
+      </h2>
       <div className="carousel-item">
         <p className="text">{textItems[activeIndex]}</p>
       </div>
