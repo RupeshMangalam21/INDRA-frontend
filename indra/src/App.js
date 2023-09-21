@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './components/Dashboard'; 
 import Navbar from './components/Navbar';
+import Home from './Pages/Home';
 
 const App = () => {
   const backgroundStyle = {
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App" style={backgroundStyle}>
     <Navbar />
-    <Dashboard />
+    <Home />
     </div>
 
   );
