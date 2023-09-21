@@ -1,5 +1,5 @@
 import React from 'react';
-import Dashboard from '../components/Dashboard'; // Import the Dashboard component
+import Dashboard from './Dashboard'; // Import the Dashboard component
 
 const Predictions = () => {
   return (
