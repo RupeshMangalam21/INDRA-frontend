@@ -1,0 +1,8 @@
+carousel-container{
+    element.style {
+        background: #f0f8ff80;
+        border-radius: 40px;
+        max-width: fit-content;
+        padding: 15px;
+    }
+}
