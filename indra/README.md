@@ -1,68 +1,70 @@
-# This repository was initiated with create-react-native-web-app
+# Getting Started with Create React App
 
-[![NPM](https://nodei.co/npm/create-react-native-web-app.png)](https://npmjs.org/package/create-react-native-web-app)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![GitHub issues](https://img.shields.io/github/issues/orYoffe/create-react-native-web-app.svg)
-![license](https://img.shields.io/github/license/orYoffe/create-react-native-web-app.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/orYoffe/create-react-native-web-app.svg)
-![npm](https://img.shields.io/npm/v/create-react-native-web-app.svg)
+## Available Scripts
 
-### A simple CLI tool to start your React Native Web project to develop same app for IOS Android and Web
+In the project directory, you can run:
 
-<p align="center" >
-<img width="300"  src="https://raw.githubusercontent.com/orYoffe/create-react-native-web-app/master/template/src/logo.png">
-</p>
+### `npm start`
 
-## Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```sh
-# Run create-react-native-web-app <project-directory>
-$ npx create-react-native-web-app myApp
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# if you previously installed this package globaly run this command first to uninstall the previous version:
-# npm uninstall -g create-react-native-web-app
+### `npm test`
 
-# cd into your <project-directory>
-$ cd myApp
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Run Web/Ios/Android development
-# Web
-$ npm run web
+### `npm run build`
 
-# IOS (simulator)
-$ npm run ios
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Android (connected device)
-$ npm run android
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- To work with IOS and Android - Install Xcode and Android studio and follow the react native instructions [under the "Building Projects with Native Code" tab](http://facebook.github.io/react-native/docs/getting-started.html)
+### `npm run eject`
 
-<p align="center" >
-<img width="1000"  src="https://raw.githubusercontent.com/orYoffe/create-react-native-web-app/master/cli_preview.png">
-</p>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Folder structure
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```
-myApp
-├── android (When opening with Android studio, open this folder)
-│   └── android project files
-├── ios (When opening with Xcode, open this folder)
-│   └── ios project files
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    └── project code
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Resources
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- [React Native for Web (react-native-web)](https://github.com/necolas/react-native-web)
-- [React](https://reactjs.org/)
-- [React Native](http://facebook.github.io/react-native/)
-- [Create React App](https://github.com/facebook/create-react-app)
-- [Create React Native App](https://github.com/react-community/create-react-native-app)
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
