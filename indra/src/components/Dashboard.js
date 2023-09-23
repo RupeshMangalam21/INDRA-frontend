@@ -1,5 +1,5 @@
-// Dashboard.js
 import React, { useState, useEffect } from 'react';
+import { format } from 'date-fns'; // Import the format function from date-fns
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchLocations = async () => {
       try {
         setLoading(true);
-        const response = await fetch('');
+        const response = await fetch('api goes here'); // Replace with location API endpoint
         const data = await response.json();
 
         setLocations(data);
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     try {
       setLoading(true);
-      const response = await fetch(`/api/predictions?location=${selectedLocation}`);
+      const response = await fetch(`/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
       const data = await response.json();
 
       setPredictions(data);
@@ -44,6 +44,12 @@ const Dashboard = () => {
       setError('Error fetching predictions');
       setLoading(false);
     }
+  };
+
+  // Format timestamp function
+  const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp); 
+    return format(date, 'dd MMM yyyy HH:mm:ss'); 
   };
 
   return (
@@ -76,7 +82,7 @@ const Dashboard = () => {
               <tbody>
                 {predictions.map((prediction, index) => (
                   <tr key={prediction.timestamp}>
-                    <td>{/* Format timestamp here */}</td>
+                    <td>{formatTimestamp(prediction.timestamp)}</td>
                     <td>{(prediction.probability * 100).toFixed(2)}%</td>
                   </tr>
                 ))}
