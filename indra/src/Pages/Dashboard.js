@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchLocations = async () => {
       try {
         setLoading(true);
-        const response = await fetch('api goes here'); // Replace with location API endpoint
+        const response = await fetch('https://prototype-test-indra-backend.onrender.com/api/locations'); // Replace with location API endpoint
         const data = await response.json();
 
         setLocations(data);
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
     try {
       setLoading(true);
-      const response = await fetch(`/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
+      const response = await fetch(`https://prototype-test-indra-backend.onrender.com/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
       const data = await response.json();
 
       setPredictions(data);
@@ -54,8 +54,6 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Cloudburst Predictions</h1>
-
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
