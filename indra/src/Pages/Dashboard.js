@@ -48,8 +48,8 @@ const Dashboard = () => {
 
   // Format timestamp function
   const formatTimestamp = (timestamp) => {
-    const date = new Date(timestamp); 
-    return format(date, 'dd MMM yyyy HH:mm:ss'); 
+    const date = new Date(timestamp);
+    return format(date, 'dd MMM yyyy HH:mm:ss');
   };
 
   return (
@@ -63,7 +63,7 @@ const Dashboard = () => {
           <select value={selectedLocation} onChange={handleLocationChange}>
             <option value="">Select Location</option>
             {locations.map((location) => (
-              <option key={location.id} value={location.id}>
+              <option key={location.name} value={location.name}>
                 {location.name}
               </option>
             ))}
@@ -79,7 +79,7 @@ const Dashboard = () => {
               </thead>
               <tbody>
                 {predictions.map((prediction, index) => (
-                  <tr key={prediction.timestamp}>
+                  <tr key={index}>
                     <td>{formatTimestamp(prediction.timestamp)}</td>
                     <td>{(prediction.probability * 100).toFixed(2)}%</td>
                   </tr>
