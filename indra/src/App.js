@@ -24,10 +24,10 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Outlet />}>
-            <Route path="/Predictions" element={<Predictions />}>
-              <Route path="/Dashboard" element={<Dashboard />} />
-            </Route>
+          <Route path="Predictions" element={<Predictions />}>
+            <Route path="Dashboard" element={<Dashboard />} />
           </Route>
+        </Route>
         </Routes>
       </Router>
     </div>
