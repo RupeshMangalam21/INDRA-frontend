@@ -63,8 +63,8 @@ const Dashboard = () => {
           <select value={selectedLocation} onChange={handleLocationChange}>
             <option value="">Select Location</option>
             {locations.map((location) => (
-              <option key={location.name} value={location.name}>
-                {location.name}
+              <option key={location.location} value={location.location}>
+                {location.location}
               </option>
             ))}
           </select>
