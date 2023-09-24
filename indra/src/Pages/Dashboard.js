@@ -14,7 +14,7 @@ const Dashboard = () => {
     const fetchLocations = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:8000/api/locations/'); // Replace with location API endpoint
+        const response = await fetch('https://prototype-test-indra-backend.onrender.com/api/locations/'); // Replace with location API endpoint
         const data = await response.json();
           console.log(data);
         setLocations(data);
@@ -36,7 +36,7 @@ const Dashboard = () => {
 
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:8000/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
+      const response = await fetch(`https://prototype-test-indra-backend.onrender.com/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
       const data = await response.json();
       console.log("prdict",data);
       setPredictions(data);
