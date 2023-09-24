@@ -14,9 +14,9 @@ const Dashboard = () => {
     const fetchLocations = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://prototype-test-indra-backend.onrender.com/api/locations'); // Replace with location API endpoint
+        const response = await fetch('http://localhost:8000/api/locations/'); // Replace with location API endpoint
         const data = await response.json();
-
+          console.log(data);
         setLocations(data);
         setLoading(false);
       } catch (error) {
@@ -31,13 +31,14 @@ const Dashboard = () => {
   // Handle location selection change
   const handleLocationChange = async (event) => {
     const selectedLocation = event.target.value;
+    console.log(selectedLocation);
     setSelectedLocation(selectedLocation);
 
     try {
       setLoading(true);
-      const response = await fetch(`https://prototype-test-indra-backend.onrender.com/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
+      const response = await fetch(`http://localhost:8000/api/predictions?location=${selectedLocation}`); // Replace with prediction API endpoint
       const data = await response.json();
-
+      console.log("prdict",data);
       setPredictions(data);
       setLoading(false);
     } catch (error) {
@@ -63,8 +64,8 @@ const Dashboard = () => {
           <select value={selectedLocation} onChange={handleLocationChange}>
             <option value="">Select Location</option>
             {locations.map((location) => (
-              <option key={location.location} value={location.location}>
-                {location.location}
+              <option   key={location._id} value={location._id}>
+                {location.name}
               </option>
             ))}
           </select>
